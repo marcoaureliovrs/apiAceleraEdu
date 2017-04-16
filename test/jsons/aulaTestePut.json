@@ -1,0 +1,14 @@
+{
+    "aula":{
+        "cod_aula":1,
+        "fk_cod_materia":4,
+        "nome_aula":"Aula Teste 4",
+        "desc_aula":"Aula de teste cadastrada através do envio de um json pelo curl de Post",
+        "dependencia_aula":2,
+        "url_video_aula":"http://cdn.api.aceleraedu.com.br/media/cursox/materiax/video/nome-aula",
+        "url_doc_aula":"http://cdn.api.aceleraedu.com.br/media/cursox/materiax/doc/nome-aula",
+        "url_ppt_aula":"http://cdn.api.aceleraedu.com.br/media/cursox/materiax/ppt/nome-aula",
+        "url_exerc_aula":"http://cdn.api.aceleraedu.com.br/media/cursox/materiax/exerc/nome-aula",
+        "url_thumbnail":"http://cdn.api.aceleraedu.com.br/media/cursox/materiax/thumb/nome-aula"
+    }
+}

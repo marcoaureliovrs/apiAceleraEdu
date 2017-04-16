@@ -1,0 +1,159 @@
+Documento responsável por listar os possíveis curls que podem ser executados na aplicação
+
+
+
+=================================================================================================================
+=> Cursos <=
+Para poder inserir ou fazer atualizações na tabela de curso o JSON deve seguir o seguinte modelo:
+
+"curso":{
+	"nome_curso":"Curso deste",
+	"desc_curso":"Inclusão de curso de teste.",
+	"valor_curso":"10.00"
+}
+
+
+=================================================================================================================
+post
+
+curl http://localhost:3000/cursos/curso -X POST -v -H "Content-type: application/json" -d @jsons/cursoTeste.json | json_pp
+
+
+=================================================================================================================
+put
+
+curl http://localhost:3000/cursos/curso -X PUT -v -H "Content-type: application/json" -d @jsons/cursoTestePut.json | json_pp
+
+
+=================================================================================================================
+get
+
+curl -X GET -v -H "Content-type: application/json" http://localhost:3000/cursos/curso/11
+
+curl http://localhost:3000/cursos -X GET -v -H "Content-type: application/json" -d @jsons/cursoTesteGet.json | json_pp
+
+curl http://localhost:3000/cursos/curso -X GET -v -H "Content-type: application/json" -d @jsons/cursoTesteGet.json | json_pp
+
+
+=================================================================================================================
+delete
+
+curl -X DELETE -v -H "Content-type: application/json" http://localhost:3000/cursos/curso/9
+
+
+
+=================================================================================================================
+=> Materias <=
+Para poder inserir ou fazer atualizações na tabela de curso o JSON deve seguir o seguinte modelo:
+
+{
+	"materia": {
+		"cod_curso_relacionado":1,
+		"nome_materia":"Materia Teste",
+		"desc_materia":"Inclusão de materia de teste"
+	}
+}
+
+=================================================================================================================
+Post
+
+curl http://localhost:3000/materias/materia -X POST -v -H "Content-type: application/json" -d @jsons/materiaTestePost.json | json_pp
+
+
+=================================================================================================================
+Put
+
+curl http://localhost:3000/materias/materia -X PUT -v -H "Content-type: application/json" -d @jsons/materiaTestePut.json | json_pp
+
+=================================================================================================================
+get
+
+curl -X GET -v -H "Content-type: application/json" http://localhost:3000/materias/materia/1
+
+=================================================================================================================
+delete
+
+curl -X DELETE -v -H "Content-type: application/json" http://localhost:3000/materias/materia/7
+
+
+=================================================================================================================
+=> Aulas <=
+Para poder inserir ou fazer atualizações na tabela de curso o JSON deve seguir o seguinte modelo:
+
+    {"aula":{
+    "fk_cod_materia":
+    "nome_aula":
+    "desc_aula":
+    "dependencia_aula":
+    "url_video_aula":
+    "url_doc_aula":
+    "url_ppt_aula":
+    "url_exerc_aula":
+    "url_thumbnail":
+    }}
+
+
+=================================================================================================================
+Post
+
+curl http://localhost:3000/aulas/aula -X POST -v -H "Content-type: application/json" -d @jsons/aulaTestePost.json | json_pp
+
+
+=================================================================================================================
+put
+
+curl http://localhost:3000/aulas/aula -X PUT -v -H "Content-type: application/json" -d @jsons/aulaTestePut.json | json_pp
+
+=================================================================================================================
+get
+
+curl -X GET -v -H "Content-type: application/json" http://localhost:3000/aulas/aula/5
+
+
+=================================================================================================================
+delete
+
+
+curl -X DELETE -v -H "Content-type: application/json" http://localhost:3000/aulas/aula/5
+
+
+=================================================================================================================
+=> Usuários <=
+Para poder inserir ou fazer atualizações na tabela de curso o JSON deve seguir o seguinte modelo:
+
+{
+	"usuario":{
+		"nome_usuario":"",
+		"cpf_usuario":,
+		"nasc_usuario":"",
+		"sexo_usuario":"",
+		"email_usuario":"",
+		"senha_usuario":"",
+		"cod_nivel_usuario":
+	}
+}
+
+=================================================================================================================
+Post
+
+curl http://localhost:3000/usuarios/usuario -X POST -v -H "Content-type: application/json" -d @jsons/usuarioTestePost.json | json_pp
+
+
+=================================================================================================================
+put
+
+curl http://localhost:3000/usuarios/usuario -X PUT -v -H "Content-type: application/json" -d @jsons/usuarioTestePut.json | json_pp
+
+
+=================================================================================================================
+get
+
+curl -X GET -v -H "Content-type: application/json" http://localhost:3000/usuarios/usuario/8
+
+
+=================================================================================================================
+delete
+
+curl -X DELETE -v -H "Content-type: application/json" http://localhost:3000/usuarios/usuario/8
+
+==================================================================================================================

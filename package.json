@@ -1,0 +1,29 @@
+{
+  "name": "apiaceleraedu",
+  "version": "1.0.0",
+  "description": "Api de backend do aplicativo aceleraedu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "MarcoGorak",
+  "license": "ISC",
+  
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "consign": "^0.1.2",
+    "express": "^4.14.0",
+    "express-validator": "^2.20.8",
+    "memcached": "^2.2.2",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "restify": "^4.1.1",
+    "soap": "^0.16.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "supertest": "^2.0.1"
+  }
+}

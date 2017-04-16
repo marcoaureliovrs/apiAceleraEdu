@@ -1,0 +1,11 @@
+{
+	"usuario":{
+		"nome_usuario":"Usuário de Teste",
+		"cpf_usuario":"40672767880",
+		"nasc_usuario":"1992-07-26",
+		"sexo_usuario":"Masculino",
+		"email_usuario":"teste@aceleraedu.com.br",
+		"senha_usuario":"teste@123",
+		"cod_nivel_usuario":"1"
+	}
+}
